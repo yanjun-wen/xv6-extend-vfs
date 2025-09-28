@@ -14,7 +14,7 @@
 - 尽可能多地通过本赛题的测试用例。
 
 ### 当前项目相关的实现源码：
-- [xv6-riscv-rev5](https://github.com/mit-pdos/xv6-riscv/releases/tag/xv6-riscv-rev5)：xv6-riscv第5版源码
+- [xv6-riscv-rev5](https://github.com/mit-pdos/xv6-riscv/releases/tag/xv6-riscv-rev5)：xv6-riscv第5版源码。
 - [本赛题的测试用例](https://github.com/yanjun-wen/xv6-extend-vfs/tree/main/tests)：建设中，不要求全部通过，会动态扩充，参赛队伍可向负责老师申请新增测例。
 - [xv6-静春山-中山大学](https://gitlab.eduxiji.net/educg-group-36002-2710490/T202510558995330-264)：参考项目：2025年操作系统全国赛内核赛道"静春山"团队的xv6项目。
 - [xv6-RuOK-武汉大学](https://gitlab.eduxiji.net/educg-group-36002-2710490/T202510486995232-2402)：参考项目：2025年操作系统全国赛内核赛道"RuOK"团队的xv6项目。
