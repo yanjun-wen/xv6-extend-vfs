@@ -79,8 +79,7 @@ test1          2 21 33376
 test2          2 22 33600
 hello          2 23 30352
 $ cat cmds.sh | sh
-$ $ mkdir: /mnt failed to create
-$ $
+$ $ $ $
 --------- test1: begin... ---------------------{
 test\\\_copy\\\_file(/mnt/hello.c,/hello.c): succeed (score: 5)
 test\\\_copy\\\_file(/mnt/hello.c,/tests/hello.c): succeed (score: 5)
