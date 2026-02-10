@@ -6,12 +6,11 @@
 
 ## 预期目标
 
-同时支持xv6文件系统和ext2文件系统。
+同时支持xv6、ext2和fat32文件系统。
 
 ## 要求
 
 * 操作系统在 qemu-riscv 模拟器中运行。
-* 包含至少2各磁盘设备，一个用xv6文件系统，一个用ext2文件系统。
 * 启动时用xv6文件系统(包含测试用例(放在目录"/tests"下))，启动后手动挂载ext2文件系统到目录"/mnt"。
 * 提交所开发最终版与原xv6-riscv第5版之间的diff文件。
 * 尽可能多地通过本赛题的测试用例。
@@ -81,11 +80,11 @@ hello          2 23 30352
 $ cat cmds.sh | sh
 $ $ $ $
 --------- test1: begin... ---------------------{
-test\\\_copy\\\_file(/mnt/hello.c,/hello.c): succeed (score: 5)
-test\\\_copy\\\_file(/mnt/hello.c,/tests/hello.c): succeed (score: 5)
-test\\\_copy\\\_file(/hello.c,/mnt/hello.c): succeed (score: 5)
-test\\\_copy\\\_file(/tests/hello.c,/mnt/hello.c): succeed (score: 5)
---------- test1: finished (total score: 20)----}
+test\\\_copy\\\_file(/mnt/hello.c,/hello.c): succeed
+test\\\_copy\\\_file(/mnt/hello.c,/tests/hello.c): succeed
+test\\\_copy\\\_file(/hello.c,/mnt/hello.c): succeed
+test\\\_copy\\\_file(/tests/hello.c,/mnt/hello.c): succeed
+--------- test1: finished ---------------------}
 $
 --------- test2: begin... ---------------------{
 将从 xv6 文件系统复制文件到 EXT2 文件系统
@@ -102,8 +101,8 @@ void main () {
 
 现在您可以用以下命令查看复制的文件:
 cat /mnt/hello.c
-test\\\_cross\\\_fs\\\_copy(): succeed (score: 7)
---------- test2: finished (total score: 7)----}
+test\\\_cross\\\_fs\\\_copy(): succeed
+--------- test2: finished ---------------------}
 $ $ QEMU: Terminated
 wyj@ali4nudtOS:~/os/xv6/lab$
 </pre>
